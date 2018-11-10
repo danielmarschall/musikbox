@@ -1,0 +1,28 @@
+
+ENTWICKELT MIT DELPHI 7
+Es wird die XP-Manifest VCL verwendet
+
+Verwendete Komponenten
+----------------------
+
+Dieser Quelltext verwendet folgende fremde VCLs:
+
+TBrowseForFolder 1.0
+http://www.torry.net/vcl/dialogs/stddialogs/brwsfldr.zip
+
+Wave Control 1.0
+http://www.torry.net/vcl/mmedia/audio/mwavcontl.zip
+
+Gedanken:
+---------
+
+Lautstärke-Regelung
+"Automatisch zum nächsten Ordner springen"
+Vor/Zurück-Buttons
+
+Alte Farben
+-----------
+
+Form: $00EDBF96
+ListBox: $00F2D3B7
+Forecolor: $00E9B687
