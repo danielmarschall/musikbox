@@ -118,17 +118,17 @@ procedure TInfoForm.Button1Click(Sender: TObject);
 var
   temp: RawByteString;
 begin
-  temp := GetHTML('http://www.viathinksoft.de/update/?id=musikbox');
+  temp := GetHTML('https://www.viathinksoft.de/update/?id=musikbox');
   if copy(temp, 0, 7) = 'Status:' then
   begin
     Application.MessageBox('Ein Fehler ist aufgetreten. Wahrscheinlich ist keine Internetverbindung aufgebaut, oder der der ViaThinkSoft-Server temporär offline.', 'Fehler', MB_OK + MB_ICONERROR)
   end
   else
   begin
-    if GetHTML('http://www.viathinksoft.de/update/?id=musikbox') <> ProgrammVersion then
+    if GetHTML('https://www.viathinksoft.de/update/?id=musikbox') <> ProgrammVersion then
     begin
       if Application.MessageBox('Eine neue Programmversion ist vorhanden. Möchten Sie diese jetzt herunterladen?', 'Information', MB_YESNO + MB_ICONASTERISK) = ID_YES then
-        shellexecute(application.handle, 'open', pchar('http://www.viathinksoft.de/update/?id=@musikbox'), '', '', sw_normal);
+        shellexecute(application.handle, 'open', pchar('https://www.viathinksoft.de/update/?id=@musikbox'), '', '', sw_normal);
     end
     else
     begin
@@ -144,12 +144,12 @@ end;
 
 procedure TInfoForm.lblWeb1Click(Sender: TObject);
 begin
-  ShellExecute(Handle, 'open', 'http://www.daniel-marschall.de/', nil, nil, SW_SHOWNORMAL);
+  ShellExecute(Handle, 'open', 'https://www.daniel-marschall.de/', nil, nil, SW_SHOWNORMAL);
 end;
 
 procedure TInfoForm.lblWeb2Click(Sender: TObject);
 begin
-  ShellExecute(Handle, 'open', 'http://www.viathinksoft.de/', nil, nil, SW_SHOWNORMAL);
+  ShellExecute(Handle, 'open', 'https://www.viathinksoft.de/', nil, nil, SW_SHOWNORMAL);
 end;
 
 end.
