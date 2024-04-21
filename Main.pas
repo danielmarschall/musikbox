@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, Forms, SysUtils, StdCtrls, IniFiles, MPlayer,
   Gauges, ComCtrls, ImgList, Controls, Classes, ExtCtrls,
-  WaveControl, registry, Dialogs, math;
+  WaveControl, registry, Dialogs, math, System.ImageList;
 
 type
   TStringDynArray = array of string;

@@ -19,7 +19,7 @@ VersionInfoDescription=MusikBox 1.5 Setup
 VersionInfoTextVersion=1.0.0.0
 VersionInfoVersion=1.5
 OutputDir=.
-OutputBaseFilename=MusikBoxSetup
+OutputBaseFilename=MusikBox_Setup
 ; Configure Sign Tool in InnoSetup at "Tools => Configure Sign Tools" (adjust the path to your SVN repository location)
 ; Name    = sign_single   
 ; Command = "C:\SVN\...\sign_single.bat" $f
@@ -31,14 +31,14 @@ Name: de; MessagesFile: "compiler:Languages\German.isl"
 
 [Files]
 ; Allgemein
-Source: "MusikBox.exe"; DestDir: "{app}"; Flags: ignoreversion signonce
-Source: "Readme.txt"; DestDir: "{app}"; Flags: isreadme
+Source: "..\MusikBox.exe"; DestDir: "{app}"; Flags: ignoreversion signonce
+Source: "..\Readme.txt"; DestDir: "{app}"; Flags: isreadme
 
 [Icons]
 ; Allgemein
 Name: "{group}\MusikBox"; Filename: "{app}\MusikBox.exe"
 ; Deutsch
-Name: "{group}\Lies mich"; Filename: "{app}\Readme.txt"
+Name: "{group}\MusikBox Lies mich"; Filename: "{app}\Readme.txt"
 ;Name: "{group}\Deinstallieren"; Filename: "{uninstallexe}"
 ;Name: "{group}\Webseiten\Daniel Marschall"; Filename: "https://www.daniel-marschall.de/"
 ;Name: "{group}\Webseiten\ViaThinkSoft"; Filename: "https://www.viathinksoft.de/"

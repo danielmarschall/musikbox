@@ -11,14 +11,12 @@ object MainForm: TMainForm
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
   Font.Style = []
-  OldCreateOrder = False
   Position = poDesktopCenter
   OnCanResize = FormCanResize
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   OnResize = FormResize
   OnShow = FormShow
-  PixelsPerInch = 96
   TextHeight = 13
   object lblOrdner: TLabel
     Left = 8
@@ -75,6 +73,8 @@ object MainForm: TMainForm
         Width = 50
       end>
     OnClick = sbrCopyrightClick
+    ExplicitTop = 380
+    ExplicitWidth = 717
   end
   object btnStart: TButton
     Left = 464
@@ -134,7 +134,9 @@ object MainForm: TMainForm
     Height = 30
     EnabledButtons = [btPlay]
     VisibleButtons = [btPlay]
+    DoubleBuffered = True
     Visible = False
+    ParentDoubleBuffered = False
     TabOrder = 7
   end
   object grpPlayMode: TGroupBox
