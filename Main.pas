@@ -86,8 +86,6 @@ uses Info, Config;
 
 {$R *.dfm}
 
-{$R windowsxp.res}
-
 // http://www.delphipraxis.net/post592358.html
 function IsFileDRMProtected(AFileName: String): Boolean;
 var lCheckProc: function(const AFileName: PWideChar; var AIsProtected: Bool): HRESULT; stdcall;

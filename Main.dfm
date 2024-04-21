@@ -11,7 +11,7 @@ object MainForm: TMainForm
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
   Font.Style = []
-  Position = poDesktopCenter
+  Position = poScreenCenter
   OnCanResize = FormCanResize
   OnCreate = FormCreate
   OnDestroy = FormDestroy
