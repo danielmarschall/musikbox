@@ -7,8 +7,9 @@
         <TargetedPlatforms>1</TargetedPlatforms>
         <AppType>Application</AppType>
         <FrameworkType>VCL</FrameworkType>
-        <ProjectVersion>19.5</ProjectVersion>
+        <ProjectVersion>20.3</ProjectVersion>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <ProjectName Condition="'$(ProjectName)'==''">Musikbox</ProjectName>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
         <Base>true</Base>
@@ -64,7 +65,7 @@
         <VerInfo_Keys>CompanyName=ViaThinkSoft;FileDescription=Ein einfach zu bedienbares Musikprogramm...;FileVersion=1.5.0.0;InternalName=MusikBox;LegalCopyright=© Copyright 2005 - 2007 ViaThinkSoft;LegalTrademarks=Keine;OriginalFilename=MusikBox.exe;ProductName=ViaThinkSoft MusikBox;ProductVersion=1.5.0.0;Webseite=www.viathinksoft.de;Projektleiter=Daniel Marschall - www.daniel-marschall.de</VerInfo_Keys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
-        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
         <BT_BuildType>Debug</BT_BuildType>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName)</VerInfo_Keys>
